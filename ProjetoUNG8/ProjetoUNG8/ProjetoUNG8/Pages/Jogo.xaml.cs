@@ -33,7 +33,7 @@ namespace ProjetoUNG8.Pages
                 Acertou = "Não",
                 Tentativas = 0,
                 Imagem = tarefa.Imagem,
-                Quando = DateTime.Now.ToString("dd / MM HH: mm")
+                Quando = DateTime.Now.ToString("dd/MM  HH:mm")
 
         };
 

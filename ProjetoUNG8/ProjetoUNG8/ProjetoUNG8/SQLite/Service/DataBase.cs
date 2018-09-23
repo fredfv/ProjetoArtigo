@@ -36,7 +36,7 @@ namespace ProjetoUNG8.SQLite.Service
         //---------------------------------------------
         public List<Tarefa> GetAllTarefa()
         {
-            return _db.Table<Tarefa>().ToList();
+            return _db.Table<Tarefa>().OrderByDescending(a => a.Id).ToList();
         }
 
         public Tarefa GetTarefa()

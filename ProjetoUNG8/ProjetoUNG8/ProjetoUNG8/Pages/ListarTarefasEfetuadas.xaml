@@ -18,7 +18,7 @@
                                     <!--<StackLayout Orientation="Horizontal">-->
                                         <StackLayout >
                                             <Label Text="Nome: " TextColor="LightGray"/>
-                                            <Label Text="{Binding Nome}" FontAttributes="Bold" FontSize="Medium" Margin="9,0,0,0"/>
+                                            <Label Text="{Binding Nome}" FontAttributes="Italic" FontSize="Medium" Margin="9,0,0,0"/>
                                         </StackLayout>
 
                                         <StackLayout >
@@ -35,7 +35,7 @@
 
                                         <StackLayout >
                                           <Label Text="Tentativas:  " TextColor="LightGray"/>
-                                            <Label Text="{Binding Tentativas}" FontAttributes="Bold" FontSize="Large" Margin="9,0,0,0"/>
+                                            <Label Text="{Binding Tentativas}" FontAttributes="Italic" FontSize="Large" Margin="9,0,0,0"/>
                                         </StackLayout>
 
                                         <StackLayout >
