@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoUNG8.Pages.Jogo">
+    <ContentPage.Content>
+        <StackLayout Orientation="Horizontal">
+            <StackLayout HorizontalOptions="Start" Margin="5,5,20,5">
+                <Image Source="{Binding Imagem}" WidthRequest="411" HeightRequest="274" Aspect="Fill"/>
+            </StackLayout>
+
+            <StackLayout Margin="5,20,5,10" Spacing="15" HorizontalOptions="End">
+                <Button Text="{Binding Nome01}" BackgroundColor="LightGreen" CornerRadius="30" Clicked="ApertouAction"></Button>
+                <Button Text="{Binding Nome02}" BackgroundColor="LightGreen" CornerRadius="30" Clicked="ApertouAction"></Button>
+                <Button Text="{Binding Nome03}" BackgroundColor="LightGreen" CornerRadius="30" Clicked="ApertouAction"></Button>
+                <Button Text="{Binding Nome04}" BackgroundColor="LightGreen" CornerRadius="30" Clicked="ApertouAction"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

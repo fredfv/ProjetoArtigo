@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoUNG8.Pages.ListaTarefas">
+    <ContentPage.Content>
+        <ListView x:Name="lvLista" HasUnevenRows="True" ItemTapped="EscolheuAction" SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Spacing="30" Margin="15,7,0,0" Padding="7">
+                            <StackLayout HorizontalOptions="Start">
+                                <Image x:Name="image" Source="{Binding Imagem}" WidthRequest="136" HeightRequest="76"/>
+                            </StackLayout>
+                            <StackLayout VerticalOptions="CenterAndExpand" Spacing="7" Orientation="Horizontal">
+                                <Label Text="Dificuldade: " FontAttributes="Bold" FontSize="Medium" Margin="10,0,0,0"/>
+                                <Label Text="{Binding Dificuldade}" FontAttributes="Italic" FontSize="Large"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
